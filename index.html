@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador de Texto</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <h1 id= titulo class="titulo">Encriptador de Texto</h1>
+
+  <main class="main">
+    <section class="form box">
+      <form action="">
+        <label for="input-texto">¡Mayúsculas no permitidas!... No se pueden ingresar números ni caracteres especiales.</label>
+        <input class="text-input" type="text" name="input-text" id="msg-input" placeholder="Ingrese el texto aquí... " onkeyup= "this.value=validador(this.value)">
+        
+      <input class="btn" type="submit" value="Encriptar" id="btn-encriptar">
+      <input class="btn" type="submit" value="Desencriptar" id="btn-desencriptar">
+      <button class="btn" type="submit" value="Pegar" id="btn-paste">Pegar</button>  
+      </form>
+    </section>
+  
+    <section class="msg box">
+      <h2 id="titulo2">Mensaje encriptado:</h2>
+      <input class="text-input" type="text" id="msg-output"></input>
+      <button class="btn" type="submit" value="copiar" id="btn-copy">Copiar</button>
+      <button class="btn" type="submit" value="eliminar" id="btn-delete">Borrar Texto</button> 
+ 
+    </section>
+  </main>
+
+  <script src="JS/buttons.js"></script>
+  <script src="JS/formularios.js"></script>
+  <script src="JS/script.js"></script>
+</body>
+</html>
+
